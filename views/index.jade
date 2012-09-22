@@ -1,0 +1,22 @@
+extends layout
+
+block content
+	div#userside
+		span(style="float:left; padding-top:3px") Nick :
+		input(id="txtnick",type="text",style="margin-left:10px; width:125px; margin-bottom:10px; float:left; margin-right:10px;",required="required")
+		ul#colors
+			li
+				a(style="background:black", href="javascript:void(0)",class='selected',title="black") ᴥ
+			li
+				a(style="background:red", href="javascript:void(0)",title="red")
+			li
+				a(style="background:green", href="javascript:void(0)",title="green")
+			li
+				a(style="background:blue", href="javascript:void(0)",title="blue")
+		input(id="btnstart",type="button",value="Start",style="margin-left:10px; width:125px; margin-bottom:10px;")
+		
+		
+	div#chatside
+		ul
+				
+	input(id="txtchat",type="text",style="width:100%; margin-top:10px;",placeholder="Message Text [ENTER]")
