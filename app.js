@@ -59,8 +59,8 @@ io.sockets.on('connection', function (socket) {
 		{
 			delete usernames[socket.username];
 	
-			io.sockets.emit('updatechat',getUserData("System","["+socket.username+"] has disconnected.","red"));
-			console.log(socket.username+" has disconnected.");		
+			io.sockets.emit('updatechat',getUserData("System","["+socket.username+"] has disconnected..","red"));
+			console.log(socket.username+" has disconnected..");		
 		}
 	});
 });
