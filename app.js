@@ -29,6 +29,10 @@ app.get('/', routes.index);
 
 server.listen(app.get('port'));
 
+console.log("********************");
+console.log("localhost:3000 ready");
+console.log("********************");
+
 /*************************************************************/
 
 var usernames = {};
@@ -38,6 +42,7 @@ io.set('log level', 0); // 0 to not take log
 
 
 io.sockets.on('connection', function (socket) {
+	
 	// Add user
   	socket.on('adduser', function (username,color) {
 		socket.username = username;		
